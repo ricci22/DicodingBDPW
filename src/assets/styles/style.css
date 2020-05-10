@@ -22,9 +22,15 @@ h2, h3 {
     color: #00a2c6;
 }
 
+header {
+    display: inline;
+}
+
 nav {
     background-color: #00a2c6;
     padding: 5px;
+    position: sticky;
+    top: 0;
 }
 
 nav a {
@@ -59,15 +65,15 @@ nav li {
     margin-top: 20px;
 }
 
-.profile header {
-    text-align: center;
-}
-
 .featured-image {
     width: 100%;
     max-height: 300px;
     object-fit: cover;
     object-position: center;
+}
+
+.profile header {
+    text-align: center;
 }
 
 .profile img {
@@ -85,10 +91,67 @@ aside {
     padding-left: 20px;
 }
 
+.flex-container-column {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.flex-container-row {
+    display: flex;
+}
+
+.button {
+    flex-basis: 25%;
+
+    font-size: 1em;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid whitesmoke;
+    background: -webkit-linear-gradient(top, #b8b6b6, #ddd);
+    cursor: pointer
+}
+
+.button:hover {
+    font-weight: bold;
+}
+
+.display {
+    width: 100%;
+    font-size: 2em;
+    padding: 10px 20px;
+    border: 1px solid whitesmoke;
+    background-color: #e2e0e0;
+}
+
+.double {
+    flex-basis: 50%;
+}
+
+.operator,
+.negative,
+.equals {
+    background: #00c8eb;
+}
+
 footer {
     padding: 20px;
     color: white;
     background-color: #00a2c6;
     text-align: center;
     font-weight: bold;
+}
+
+@media screen and (max-width: 1000px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+    .button {
+        padding: 10px;
+    }
 }
