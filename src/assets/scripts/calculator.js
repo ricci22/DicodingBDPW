@@ -120,3 +120,44 @@ for (let button of buttons) {
         updateDisplay();
     });
 }
+
+const cacheKey = "NUMBER";
+if (typeof(Storage) !== "undefined") {
+    // pengecekan apakah data sessionStorage dengan key NUMBER tersedia atau belum
+    if (sessionStorage.getItem(cacheKey) === "undefined") {
+        // jika belum maka akan atur dengan nilai awal yakni 0
+        sessionStorage.setItem(cacheKey, 0);
+    }
+    const btnSessionStorage = document.querySelector("#btnSessionStorage");
+    const countSessionStorage = document.querySelector("#countSessionStorage") ;
+    btnSessionStorage.addEventListener('click', function(event) {
+        let number = sessionStorage.getItem(cacheKey);
+        number++;
+        sessionStorage.setItem(cacheKey, number);
+        countSessionStorage.innerText = sessionStorage.getItem(cacheKey);
+    });
+} else {
+    alert("Browser tidak mendukung web storage");
+}
+
+const cacheKey2 = "NUMBER2";
+if (typeof(Storage) !== "undefined") {
+    if (localStorage.getItem(cacheKey2) === "undefined") {
+        localStorage.setItem(cacheKey2, 0);
+    }
+
+    const btnLocalStorage = document.querySelector("#btnLocalStorage");
+    const countLocalStorage = document.querySelector("#countLocalStorage");
+    const clearLocalStorage = document.querySelector("#clearLocalStorage");
+    btnLocalStorage.addEventListener('click', function(event) {
+        let number2 = localStorage.getItem(cacheKey2);
+        number2++;
+        localStorage.setItem(cacheKey2, number2);
+        countLocalStorage.innerText = localStorage.getItem(cacheKey2);
+    });
+    clearLocalStorage.addEventListener('click', function(event) {
+        localStorage.removeItem(cacheKey2);
+    });
+} else {
+    alert("Browser tidak mendukung web storage");
+}
