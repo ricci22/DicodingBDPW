@@ -1,3 +1,4 @@
+/*
 console.log("Hello World with JavaScript");
 
 const firstName = prompt("Siapa nama depanmu?");
@@ -21,8 +22,8 @@ if (user.language === "English") {
 } else {
     alert("Senang bertemu dengan Anda " + user.name.first + " " + user.name.last + "!");
 }
+*/
 
-/*
 const calculator = {
     displayNumber: '0',
     operator: null,
@@ -53,4 +54,3 @@ for (let button of buttons) {
         updateDisplay();
     });
 }
-*/
