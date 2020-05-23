@@ -137,6 +137,32 @@ aside {
     background: #00c8eb;
 }
 
+.history {
+    width: 100%;
+    margin: 20px auto 0 auto;
+    overflow: scroll;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+th, td {
+    text-align: center;
+    padding: 15px;
+}
+
+th {
+    background-color: #00c8eb;
+}
+
+tr:nth-child(even) {
+    background-color: #d2d2d2;
+}
+
 footer {
     padding: 20px;
     color: white;
@@ -153,5 +179,8 @@ footer {
     }
     .button {
         padding: 10px;
+    }
+    .history {
+        width: 100%;
     }
 }

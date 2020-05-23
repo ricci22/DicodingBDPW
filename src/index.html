@@ -7,7 +7,6 @@
 		<!--link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"-->
 		<title>Dicoding Learning</title>
 	</head>
-	<!--script type="text/javascript" src="{{ url_for('static', filename='calculator.js')}}"></script-->
 	<body>
 		<header>
 			<div class="jumbotron">
@@ -78,6 +77,23 @@
 						Sementara itu, kunjungan individu dibuka setiap hari Sabtu.</p>
 					</section>
 				</article>
+
+				<section>
+					<div class="history card">
+						<h2>Riwayat Perhitungan</h2>
+						<table>
+							<thead>
+								<tr>
+									<th>Angka Pertama</th>
+									<th>Operator</th>
+									<th>Angka Kedua</th>
+									<th>Hasil</th>
+								</tr>
+							</thead>
+							<tbody id="historyList"></tbody>
+						</table>
+					</div>
+				</section>
 			</div>
 
 			<aside>
@@ -169,5 +185,6 @@
 			<p>Belajar Dasar Pemrograman Web &#169; 2019, Dicoding Academy</p>
 		</footer>
 	</body>
+	<script type="text/javascript" src="assets/scripts/storage.js"></script>
 	<script type="text/javascript" src="assets/scripts/calculator.js"></script>
 </html>
