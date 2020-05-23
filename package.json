@@ -1,0 +1,23 @@
+{
+  "name": "dicodingbdpw",
+  "version": "1.0.0",
+  "description": "dicoding belajar dasar pemrograman web",
+  "main": "index.js",
+  "dependencies": {
+    "http-server": "^0.12.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricci22/DicodingBDPW.git"
+  },
+  "author": "Nanda Rizki Nasution <nanda.nasution@binus.ac.id>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ricci22/DicodingBDPW/issues"
+  },
+  "homepage": "https://github.com/ricci22/DicodingBDPW#readme"
+}
